@@ -1,0 +1,175 @@
+/* App.css */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.navar-search-form {
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+  border-color: #333333;
+}
+
+body.dark-mode .modal-header .close {
+  color: #ffffff;
+  opacity: 1;
+}
+
+body.dark-mode .form-control {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #bbbbbb;
+}
+
+body.dark-mode .form-control:focus {
+  background-color: #444444;
+  color: #ffffff;
+  border: 1px solid #777777;
+}
+
+
+/* Estilos para las imágenes en las Cards */
+/* Estilos para las imágenes en las Cards */ 
+body.dark-mode .card-img-top {
+  filter: grayscale(50%);
+}
+.card-img-top {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  transition: border 0.5s ease-in-out;
+}
+
+@keyframes rainbowBorder {
+  0% {
+    border-color: red;
+  }
+
+  16% {
+    border-color: orange;
+  }
+
+  33% {
+    border-color: yellow;
+  }
+
+  50% {
+    border-color: green;
+  }
+
+  66% {
+    border-color: blue;
+  }
+
+  83% {
+    border-color: indigo;
+  }
+
+  100% {
+    border-color: violet;
+  }
+}
+
+.card-img-top:hover {
+  animation: rainbowBorder 2s infinite;
+}
+
+
+
+
+
+
+
+/* Efecto de aumento de tamaño para la card */
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  padding: 7px;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
